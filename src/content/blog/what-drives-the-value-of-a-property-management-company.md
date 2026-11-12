@@ -26,7 +26,7 @@ Brokerage and development income usually gets discounted the hardest. There is n
 
 Two firms can report the same management fee revenue and be worth very different amounts. The difference usually sits in how long clients have stayed.
 
-We look closely at the age of each management agreement, the churn rate over the past three to five years, and why departures happened. A community that left because it sold to a developer reads very differently from a community that left because meetings ran badly for a year. We also look at concentration. If one client or one association represents more than about fifteen percent of revenue, that single relationship becomes the most important item in the whole review.
+We look closely at the age of each management agreement, the churn rate over the past three to five years, and why departures happened. A community that left because it sold to a developer reads very differently from a community that left because meetings ran badly for a year. We also look at concentration. Where one client or one association represents a large share of revenue, that single relationship becomes the most important item in the whole review.
 
 The firms that score best here are rarely the cheapest in their market. They are the ones that answer the phone.
 

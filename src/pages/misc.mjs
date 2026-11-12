@@ -42,7 +42,7 @@ export function contactPage() {
     formSection({
       eyebrow: 'Send a message',
       title: 'Write to us',
-      lede: 'We reply within one business day.',
+      lede: 'We read every message and reply personally.',
       intro: [
         `${esc(site.name)} is based in New Jersey and works across the state and the areas around it. You can reach our founder directly at <a href="mailto:${site.email}">${site.email}</a>.`,
         'If your message concerns a possible sale, say so and we will treat it as confidential from the first reply.',
@@ -171,14 +171,14 @@ export function thanksPage() {
       graphic: true,
       eyebrow: 'Message received',
       title: 'Thank you. We will be in touch.',
-      lede: `Someone from ${site.name} reads every message and replies within one business day.`,
+      lede: `Someone from ${site.name} reads every message and replies personally.`,
       actions: [{ label: 'Back to the home page', href: '/', variant: 'btn--primary' }],
     }),
     `<section class="section">
       <div class="container container--narrow">
         <h2>What happens next</h2>
         <p>If you wrote to us about your company, ${esc(site.founder.firstName)} reads it personally and replies himself. The first conversation is a phone call rather than a document request, and nothing you tell us goes beyond Orchard.</p>
-        <p>If you wrote about a job, we route your details to the company in our group closest to you that is hiring for your role, and you will hear from someone within a few business days.</p>
+        <p>If you wrote about a job, we route your details to the company in our group closest to you that is hiring for your role, and you will hear from someone there.</p>
         <p>In the meantime, you might find these useful.</p>
         <p><a class="link-arrow" href="/sell-your-business/#process">How a partnership works, step by step</a></p>
         <p><a class="link-arrow" href="/blog/">Articles for owners, managers, and technicians</a></p>
@@ -190,7 +190,7 @@ export function thanksPage() {
     id: 'thanks',
     path: '/thank-you/',
     title: 'Thank you',
-    description: `Thank you for contacting ${site.name}. We read every message and reply within one business day.`,
+    description: `Thank you for contacting ${site.name}. Every message reaches a person here rather than a queue, and we reply personally.`,
     noindex: true,
     body,
   };

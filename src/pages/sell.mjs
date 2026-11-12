@@ -6,7 +6,7 @@ const faqItems = [
   {
     q: 'How do I start a conversation about selling my firm?',
     a: [
-      `Send the form at the bottom of this page, or write to ${site.founder.name} directly at <a href="mailto:${site.email}">${site.email}</a>. The first conversation is a phone call, usually about thirty minutes, and it covers what you have built and what you want to happen next.`,
+      `Send the form at the bottom of this page, or write to ${site.founder.name} directly at <a href="mailto:${site.email}">${site.email}</a>. The first conversation is a phone call, and it covers what you have built and what you want to happen next.`,
       'Nothing leaves Orchard, and we sign a mutual non-disclosure agreement before you hand over a single financial statement.',
     ],
   },
@@ -14,7 +14,7 @@ const faqItems = [
     q: 'What kinds of firms does Orchard Property Management partner with?',
     a: [
       'We partner with profitable New Jersey management companies across four areas: residential property management, community association management, commercial and mixed-use management, and the maintenance and facilities operations that serve managed property.',
-      'The firms that fit best have a long history in their market, managers and staff who stay, and client relationships that renew. As a rough guide, we look at companies with annual revenue of about $1 million or more, though we would rather hear from a strong smaller firm than miss it.',
+      'The firms that fit best have a long history in their market, managers and staff who stay, and client relationships that renew. We care a great deal more about how a company is run than about how large it is, so if yours is profitable and well regarded where it works, we would like to hear from you.',
     ],
   },
   {
@@ -67,7 +67,7 @@ const faqItems = [
   {
     q: 'How long does the process take?',
     a: [
-      'It depends on your business and on how quickly financial records come together. A straightforward transaction often runs three to five months from the first call to closing. We give you a realistic timeline early and update it at every step.',
+      'It depends on your business and on how quickly financial records come together. Once we understand what we are working with, we give you a realistic timeline early in the conversation and update it at every step rather than leaving you to guess.',
     ],
   },
   {
@@ -80,7 +80,7 @@ const faqItems = [
   {
     q: 'Can I stay involved after I sell?',
     a: [
-      'That is your call. Some owners retire at closing. Others stay through a transition period of six to twelve months, and a few keep running the company for years because they enjoy it. We build the arrangement around what you want rather than around a template.',
+      'That is your call. Some owners retire at closing. Others stay through a defined transition period, and a few keep running the company for years because they enjoy it. We build the arrangement around what you want rather than around a template.',
     ],
   },
   {
@@ -135,7 +135,7 @@ export function sellPage() {
           title: 'A good fit looks like this',
           list: [
             'A New Jersey management firm in one of our four areas, or close to it',
-            'Annual revenue of roughly $1 million or more, and a profitable track record',
+            'A profitable track record, and books that hold up to a straightforward review',
             'Management agreements and association contracts that renew year after year',
             'Managers, accountants, and maintenance staff who have stayed with you',
             'An owner who cares what happens to the team after closing',
@@ -166,7 +166,7 @@ export function sellPage() {
         {
           title: 'An introductory call',
           body:
-            'Thirty minutes on the phone. You describe the firm and what you want to happen next, we describe how Orchard operates, and we both decide whether a second conversation is worth having. No financials change hands.',
+            'A phone call. You describe the firm and what you want to happen next, we describe how Orchard operates, and we both decide whether a second conversation is worth having. No financials change hands.',
         },
         {
           title: 'A mutual non-disclosure agreement',
@@ -261,7 +261,7 @@ export function sellPage() {
     formSection({
       eyebrow: 'Confidential inquiry',
       title: 'Tell us about your company',
-      lede: 'We reply within one business day, and the conversation stays between us.',
+      lede: 'Your message reaches our founder directly, and the conversation stays between us.',
       intro: [
         'Fill in as much or as little as you like. The first four fields are all we need to call you back, and the rest simply saves us a question or two on that first call.',
         `If you would rather write directly, email <a href="mailto:${site.email}">${site.email}</a>.`,
@@ -279,32 +279,6 @@ export function sellPage() {
           label: 'What you manage',
           type: 'select',
           options: [...specialties.map((s) => s.name), 'More than one of these', 'Something related'],
-        },
-        {
-          name: 'portfolio',
-          label: 'Doors or communities',
-          type: 'select',
-          options: [
-            'Fewer than 250 doors',
-            '250 to 1,000 doors',
-            '1,000 to 3,000 doors',
-            'More than 3,000 doors',
-            'Measured in communities rather than doors',
-            'I would rather discuss this on a call',
-          ],
-        },
-        {
-          name: 'revenue',
-          label: 'Annual revenue',
-          type: 'select',
-          options: [
-            'Under $1 million',
-            '$1 million to $3 million',
-            '$3 million to $6 million',
-            '$6 million to $15 million',
-            'More than $15 million',
-            'I would rather discuss this on a call',
-          ],
         },
         {
           name: 'timeline',

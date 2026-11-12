@@ -68,7 +68,7 @@ Listen for whether the changes are investments or extractions. Hiring a second a
 
 ## Can I stay involved, and can I leave?
 
-Ask about both, because the answer should be yours to choose. Some owners want to retire at closing. Others want six to twelve months of transition. A few want to keep running the firm for years because they enjoy it.
+Ask about both, because the answer should be yours to choose. Some owners want to retire at closing. Others want a defined transition period. A few want to keep running the firm for years because they enjoy it.
 
 Be careful with any buyer who requires a long employment commitment as a condition of the price. That arrangement can work well, and it can also turn into years of working for someone else inside the company you used to own.
 

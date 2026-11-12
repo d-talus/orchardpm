@@ -28,7 +28,7 @@ We partner with four kinds of company across New Jersey. Residential management 
 
 What those have in common matters more than what separates them. Each earns revenue that renews rather than revenue that has to be won again every quarter. Each depends on people who are genuinely hard to replace. And each rewards the firms that answer the phone and follow through, which is a harder standard to hold than it sounds.
 
-As a rough guide, we look at firms with annual revenue of about $1 million or more and a profitable track record. We would rather hear from a strong smaller company than miss it, so treat that as a starting point rather than a gate.
+What we weigh is how a firm is run rather than how large it is. A profitable company with long client relationships and staff who have stayed is interesting to us whatever its size, so please do not rule yourself out on the assumption that you are too small.
 
 ## What we put behind a firm
 
@@ -46,7 +46,7 @@ We prioritize retaining employees in every acquisition, and we keep managers wit
 
 ## Who we would like to hear from
 
-If you own a New Jersey management firm and you are thinking about what happens next, we would like to talk. The first conversation is a phone call, usually about thirty minutes, and it covers what you have built and what you want to happen. Nothing leaves Orchard, and we sign a mutual non-disclosure agreement before you hand over a single financial statement.
+If you own a New Jersey management firm and you are thinking about what happens next, we would like to talk. The first conversation is a phone call, and it covers what you have built and what you want to happen. Nothing leaves Orchard, and we sign a mutual non-disclosure agreement before you hand over a single financial statement.
 
 Plenty of the owners we speak with are years away from selling. Those conversations are often the most useful ones, because there is time to tidy the financials, document the management agreements, and develop the next layer of leadership before anything happens.
 

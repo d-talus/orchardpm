@@ -181,7 +181,7 @@ export function careersPage() {
         {
           title: 'We call you back',
           body:
-            'Someone from Orchard calls within a few business days to understand what you are looking for, then points you at the right company in our group.',
+            'Someone from Orchard calls you to understand what you are looking for, then points you at the right company in our group.',
         },
         {
           title: 'You meet the local company',
