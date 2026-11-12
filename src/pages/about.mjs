@@ -19,7 +19,7 @@ export function aboutPage() {
       title: site.founder.name,
       body: [
         'I grew up in New Jersey in a family built on hard work. My grandparents on both sides immigrated here and worked in the trades, and I take real pride in working with owners who have built strong, respected businesses in their communities.',
-        'I built my career in private markets investing, partnering closely with owners and management teams on growth and operational improvement. Along the way I competed as a Division I wrestler at Harvard University while studying economics and psychology, and I earned my Master of Business Administration (MBA) from the Tuck School of Business at Dartmouth. I have invested in and worked alongside more than ten private, founder-owned businesses.',
+        'I built my career in private markets investing, partnering closely with owners and management teams on growth and operational improvement. Along the way I competed as a Division I wrestler at Harvard University while studying economics and psychology, and I earned my Master of Business Administration (MBA) from the Tuck School of Business at Dartmouth. Most of that career has gone into investing in and working alongside private, founder-owned businesses.',
         'I founded Orchard Property Management to give owners an alternative to the traditional private equity exit: a long-term home that protects their legacy and takes care of their people. My wife, our dog, and I live in Hoboken.',
         `Everything we do rests on integrity, respect, and confidentiality. If you are thinking about what happens to your company next, write to me directly at <a href="mailto:${site.email}">${site.email}</a>.`,
       ],
@@ -52,7 +52,7 @@ export function aboutPage() {
         <h3>Respect for your team</h3>
         <p>We view your employees as the heart of your business and work to keep them in place. Where an owner wants to step back, we can provide experienced managers and operational support, and we help identify and support the right leadership for what comes next.</p>
         <h3>Honoring your legacy</h3>
-        <p>We understand the dedication it takes to build a strong business and the trust behind your name. Having partnered with more than ten founder-owned businesses, we know how to make employees, clients, and communities feel comfortable through a smooth, respectful transition.</p>
+        <p>We understand the dedication it takes to build a strong business and the trust behind your name. Having partnered with founder-owned businesses before, we know how to make employees, clients, and communities feel comfortable through a smooth, respectful transition.</p>
         <h3>A thoughtful process</h3>
         <p>We recognize the value of your time and commit to making the process straightforward, efficient, and respectful of your priorities.</p>
       </div>

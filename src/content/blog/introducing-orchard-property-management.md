@@ -16,7 +16,7 @@ That last part does most of the work in this business. A management firm earns i
 
 ## Why we started
 
-I grew up in New Jersey in a family built on hard work. My grandparents on both sides immigrated here and worked in the trades, which is probably why I find owner-run businesses more interesting than anything I encountered in private markets investing. Over the past several years I have invested in and worked alongside more than ten private, founder-owned companies, and the pattern repeats almost every time.
+I grew up in New Jersey in a family built on hard work. My grandparents on both sides immigrated here and worked in the trades, which is probably why I find owner-run businesses more interesting than anything I encountered in private markets investing. Over the past several years I have invested in and worked alongside private, founder-owned companies, and the pattern repeats almost every time.
 
 The owner has built something genuinely good. The staff have been there for years. The clients renew without being chased. And when the owner starts thinking about what comes next, the options on the table all look like a version of the same thing: a buyer with a fund timeline, a plan to consolidate, and a five-year horizon that ends in another sale.
 
