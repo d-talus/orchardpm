@@ -1,5 +1,5 @@
 import { site, executiveSupport, values } from '../data/site.mjs';
-import { hero, split, featureGrid, statsBand, ctaBand, twoColumnList } from '../lib/modules.mjs';
+import { hero, split, featureGrid, prose, ctaBand, twoColumnList } from '../lib/modules.mjs';
 import { join } from '../lib/html.mjs';
 
 export function aboutPage() {
@@ -58,19 +58,15 @@ export function aboutPage() {
       </div>
     </section>`,
 
-    statsBand({
+    prose({
       eyebrow: 'Orchard with Talus Holdings',
       title: 'Guidance from people who have run businesses, not only financed them',
-      lede:
-        'Orchard Property Management is proud to partner with Talus Holdings, a team of seasoned operators and business builders who provide strategic guidance as the organization continues to grow. Talus brings decades of experience in finance, operations, and organizational development, which helps Orchard make thoughtful, long-term decisions that benefit employees, clients, and the businesses that join our platform.',
-      items: [
-        { figure: '20+', label: 'Businesses built across a wide range of industries' },
-        { figure: '100+', label: 'Successful transactions completed' },
-        { figure: '0', label: 'Investment timelines or external shareholders forcing a resale' },
-        { figure: '8', label: 'Executive support functions behind every Orchard company' },
+      body: [
+        'Orchard Property Management is proud to partner with Talus Holdings, a team of seasoned operators and business builders who provide strategic guidance as the organization continues to grow.',
+        'Talus brings decades of experience in finance, operations, and organizational development, which helps Orchard make thoughtful, long-term decisions that benefit employees, clients, and the businesses that join our platform.',
+        'The people behind Talus have run companies across a wide range of industries and worked through the problems a business runs into along the way. That experience shows up where an owner feels it most, which is in how a transition is handled and how the company is treated in the years after it.',
       ],
-      footnote:
-        'These figures describe the Talus Holdings team. Orchard Property Management is an early-stage platform, and we would rather say so plainly.',
+      variant: 'section--dark',
     }),
 
     twoColumnList({

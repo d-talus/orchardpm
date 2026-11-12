@@ -103,13 +103,13 @@ export function split({ eyebrow: eb, title, body = [], list = [], actions = [], 
   </section>`;
 }
 
-export function featureGrid({ eyebrow: eb, title, lede, items = [], columns = 3, variant = '', center = true, id }) {
+export function featureGrid({ eyebrow: eb, title, lede, items = [], columns = 3, variant = '', center = true, cardClass = '', id }) {
   const cards = items
     .map((item) => {
       const titleHtml = item.href
         ? `<h3><a href="${item.href}">${esc(item.title)}</a></h3>`
         : `<h3>${esc(item.title)}</h3>`;
-      return `<article class="card card--lift feature">
+      return `<article class="${classes('card', 'card--lift', cardClass, 'feature')}">
           ${item.icon ? iconBadge(item.icon) : ''}
           ${titleHtml}
           <p>${item.body}</p>

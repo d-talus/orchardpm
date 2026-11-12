@@ -1,5 +1,5 @@
 import { site, specialties, executiveSupport } from '../data/site.mjs';
-import { hero, featureGrid, statsBand, ctaBand, postGrid, buttons } from '../lib/modules.mjs';
+import { hero, featureGrid, ctaBand, postGrid, buttons } from '../lib/modules.mjs';
 import { join } from '../lib/html.mjs';
 
 export function homePage({ posts }) {
@@ -100,19 +100,41 @@ export function homePage({ posts }) {
       columns: 3,
     }),
 
-    statsBand({
+    featureGrid({
       eyebrow: 'Orchard with Talus Holdings',
       title: 'Small firm agility, backed by people who have done this before',
       lede:
         'Orchard Property Management is proud to partner with Talus Holdings, a team of seasoned operators and business builders who provide strategic guidance as the organization grows. Talus brings decades of experience in finance, operations, and organizational development.',
       items: [
-        { figure: '20+', label: 'Businesses built across a wide range of industries' },
-        { figure: '100+', label: 'Successful transactions completed by the Talus team' },
-        { figure: '10+', label: 'Founder-owned businesses our founder has partnered with' },
-        { figure: '8', label: 'Executive support functions behind every Orchard company' },
+        {
+          icon: 'users',
+          title: 'Leadership you can trust',
+          body:
+            'Talus is led by entrepreneurs and business builders who understand the challenges and the rewards of running a company, and who give hands-on support to the businesses they partner with.',
+        },
+        {
+          icon: 'chart',
+          title: 'Support at every stage',
+          body:
+            'A comprehensive suite of executive support services lets our operators stay focused on clients and employees, with access to a network of industry experts as the business grows.',
+        },
+        {
+          icon: 'shield',
+          title: 'Experience that has been tested',
+          body:
+            'Talus has built companies across a wide range of industries and worked through the problems a business runs into along the way. That judgment matters most during a transition.',
+        },
+        {
+          icon: 'clock',
+          title: 'A different kind of partner',
+          body:
+            'Talus is neither a private equity firm nor a venture capital fund. With no investment timelines and no external shareholders, decisions follow what the business needs.',
+        },
       ],
-      footnote:
-        'These figures describe the Talus Holdings team and the career of our founder. Orchard Property Management is an early-stage platform, and we would rather say so plainly.',
+      columns: 4,
+      cardClass: 'card--dark',
+      variant: 'section--dark',
+      center: false,
     }),
 
     featureGrid({
