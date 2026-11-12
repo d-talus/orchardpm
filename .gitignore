@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.vercel/
+.DS_Store
+Thumbs.db
+*.log
+# Full-resolution source photography. Run tools/resize-images.ps1 to regenerate
+# the web versions in public/assets/img/ after adding files here.
+tools/source-photos/
