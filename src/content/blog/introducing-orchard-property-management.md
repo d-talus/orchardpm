@@ -7,7 +7,7 @@ summary: Orchard Property Management partners with established New Jersey manage
 image: /assets/img/blog/orchard-news.jpg
 imageAlt: Orchard Property Management brand graphic
 tags: [New Jersey property management, acquisitions, Talus Holdings]
-author: Devon Gobbo
+author: Orchard Property Management
 ---
 
 Orchard Property Management is proud to introduce itself to the owners, managers, and boards who keep New Jersey property running. We partner with established management companies across the state, and we hold them for good.
@@ -16,11 +16,11 @@ That last part does most of the work in this business. A management firm earns i
 
 ## Why we started
 
-I grew up in New Jersey in a family built on hard work. My grandparents on both sides immigrated here and worked in the trades, which is probably why I find owner-run businesses more interesting than anything I encountered in private markets investing. Over the past several years I have invested in and worked alongside private, founder-owned companies, and the pattern repeats almost every time.
+Orchard Property Management grew out of years spent investing in and working alongside private, founder-owned companies. Across all of them, one pattern repeated almost every time.
 
 The owner has built something genuinely good. The staff have been there for years. The clients renew without being chased. And when the owner starts thinking about what comes next, the options on the table all look like a version of the same thing: a buyer with a fund timeline, a plan to consolidate, and a five-year horizon that ends in another sale.
 
-We founded Orchard Property Management to put a different option on the table. We buy good firms, we keep the people, we keep the name, and we have no reason to sell again.
+We started Orchard Property Management to put a different option on the table. We buy good firms, we keep the people, we keep the name, and we have no reason to sell again.
 
 ## What we look for
 
@@ -52,4 +52,4 @@ Plenty of the owners we speak with are years away from selling. Those conversati
 
 If you work in property management, we would also like to hear from you. Our companies hire maintenance technicians, licensed trades, community association managers, property managers, accountants, and leasing staff across New Jersey.
 
-Write to me directly at [dgobbo@talusholdings.com](mailto:dgobbo@talusholdings.com), or [start a confidential conversation](/sell-your-business/#contact). Either way, it reaches me rather than a queue.
+Write to us at [dgobbo@talusholdings.com](mailto:dgobbo@talusholdings.com), or [start a confidential conversation](/sell-your-business/#contact). Either way, it reaches a person here rather than a queue.

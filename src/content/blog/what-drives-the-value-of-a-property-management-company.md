@@ -7,7 +7,7 @@ summary: Revenue matters less than most owners expect. Here is what a serious bu
 image: /assets/img/blog/selling-your-business.jpg
 imageAlt: Orchard Property Management brand graphic
 tags: [property management valuation, selling a management company, New Jersey]
-author: Devon Gobbo
+author: Orchard Property Management
 ---
 
 Owners usually open this conversation with a revenue figure, and we understand why. Revenue is the number you track, the number your accountant reports, and the number another owner quoted at a conference. It is also the number that tells a buyer the least.

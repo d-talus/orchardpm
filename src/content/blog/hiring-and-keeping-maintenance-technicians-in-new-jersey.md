@@ -7,7 +7,7 @@ summary: Maintenance decides whether a management agreement renews, and technici
 image: /assets/img/blog/running-your-firm.jpg
 imageAlt: Orchard Property Management brand graphic
 tags: [maintenance technicians, hiring, property management operations, New Jersey]
-author: Devon Gobbo
+author: Orchard Property Management
 ---
 
 Ask a property management owner what keeps them up at night and you will hear about staffing long before you hear about fees. Ask which role is hardest to fill and the answer is almost always the same one: a good maintenance technician.

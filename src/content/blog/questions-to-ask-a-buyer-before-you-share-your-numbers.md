@@ -7,7 +7,7 @@ summary: A first call should go both ways. These are the questions that separate
 image: /assets/img/blog/selling-your-business.jpg
 imageAlt: Orchard Property Management brand graphic
 tags: [selling a property management company, due diligence, owner questions]
-author: Devon Gobbo
+author: Orchard Property Management
 ---
 
 Most owners come into a first call expecting to be interviewed. A buyer asks about revenue, doors under management, staff count, and client tenure, and an hour later the owner has given away a clear picture of the business while learning almost nothing in return.

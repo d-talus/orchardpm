@@ -197,7 +197,7 @@ export function postPage(post, related) {
           <p class="article__meta">
             <time datetime="${post.date}">${esc(post.dateLabel)}</time>
             &middot; ${esc(post.readingTime)} read
-            ${post.author ? `&middot; ${esc(post.author)}` : ''}
+            ${post.author && post.author !== site.name ? `&middot; ${esc(post.author)}` : ''}
           </p>
           ${post.image ? `<div class="article__hero"><img src="${post.image}" alt="${esc(post.imageAlt || '')}" width="1200" height="514" decoding="async"></div>` : ''}
           ${tableOfContents(post.html)}
@@ -263,7 +263,11 @@ export function postPage(post, related) {
         keywords: (post.tags || []).join(', '),
         image: site.url + (post.image || '/assets/img/og-default.jpg'),
         inLanguage: site.language,
-        author: { '@type': 'Person', name: post.author || site.founder.name },
+        // Posts written in Orchard's voice are authored by the organization, not a person.
+        author:
+          !post.author || post.author === site.name
+            ? { '@id': `${site.url}/#organization` }
+            : { '@type': 'Person', name: post.author },
         publisher: { '@id': `${site.url}/#organization` },
         isPartOf: { '@id': `${site.url}/blog/#blog` },
         mainEntityOfPage: { '@type': 'WebPage', '@id': `${site.url}${post.url}` },

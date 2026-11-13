@@ -89,7 +89,7 @@ function loadPosts() {
       tags: data.tags || [],
       image: data.image || '',
       imageAlt: data.imageAlt || '',
-      author: data.author || site.founder.name,
+      author: data.author || site.name,
       html,
       wordCount: words,
       readingTime: `${Math.max(1, Math.round(words / 225))} min`,

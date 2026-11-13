@@ -7,7 +7,7 @@ summary: Community association management pays well, promotes quickly, and almos
 image: /assets/img/blog/working-in-property-management.jpg
 imageAlt: Orchard Property Management brand graphic
 tags: [community association manager, HOA career, property management jobs, New Jersey]
-author: Devon Gobbo
+author: Orchard Property Management
 ---
 
 Almost nobody sets out to become a community association manager. People arrive from leasing, from accounting, from facilities, from a front desk, and quite often from having served on a board themselves and discovering they were good at it.
