@@ -7,8 +7,8 @@ export function whatWeDoPage() {
     hero({
       compact: true,
       graphic: true,
-      crumbs: [{ label: 'What we do', href: '/what-we-do/' }],
-      eyebrow: 'What we do',
+      crumbs: [{ label: 'Who we partner with', href: '/what-we-do/' }],
+      eyebrow: 'Who we partner with',
       title: 'Four kinds of management firm across New Jersey',
       lede:
         'Orchard Property Management acquires and operates the companies that manage homes, communities, and commercial property across New Jersey and the areas around it.',
@@ -98,7 +98,7 @@ export function whatWeDoPage() {
     title: 'Property management firms we partner with in NJ',
     description:
       'Orchard Property Management acquires and operates New Jersey residential, community association, commercial, and maintenance firms, keeping local brands, managers, and staff in place.',
-    crumbs: [{ label: 'What we do', href: '/what-we-do/' }],
+    crumbs: [{ label: 'Who we partner with', href: '/what-we-do/' }],
     body,
     schema: [
       {
@@ -136,11 +136,11 @@ export function specialtyPage(specialty) {
       compact: true,
       graphic: true,
       crumbs: [
-        { label: 'What we do', href: '/what-we-do/' },
+        { label: 'Who we partner with', href: '/what-we-do/' },
         { label: specialty.shortName, href: `/what-we-do/${specialty.slug}/` },
       ],
-      eyebrow: 'What we do',
-      title: `${specialty.name} in New Jersey`,
+      eyebrow: 'Who we partner with',
+      title: `Partnering with New Jersey ${specialty.partnerNoun}s`,
       lede: specialty.heroLede,
       actions: [
         { label: 'Sell your business', href: '/sell-your-business/', variant: 'btn--primary' },
@@ -190,10 +190,10 @@ export function specialtyPage(specialty) {
   return {
     id: `specialty-${specialty.slug}`,
     path: `/what-we-do/${specialty.slug}/`,
-    title: `${specialty.name} in New Jersey`,
+    title: `Sell a ${specialty.partnerNoun} in New Jersey`,
     description: `${specialty.summary} Orchard Property Management partners with New Jersey firms and keeps their teams and names in place.`,
     crumbs: [
-      { label: 'What we do', href: '/what-we-do/' },
+      { label: 'Who we partner with', href: '/what-we-do/' },
       { label: specialty.shortName, href: `/what-we-do/${specialty.slug}/` },
     ],
     body,

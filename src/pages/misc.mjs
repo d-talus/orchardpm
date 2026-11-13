@@ -177,7 +177,7 @@ export function thanksPage() {
     `<section class="section">
       <div class="container container--narrow">
         <h2>What happens next</h2>
-        <p>If you wrote to us about your company, ${esc(site.founder.firstName)} reads it personally and replies himself. The first conversation is a phone call rather than a document request, and nothing you tell us goes beyond Orchard.</p>
+        <p>If you wrote to us about your company, our founder reads it personally and answers you directly. The first conversation is a phone call rather than a document request, and nothing you tell us goes beyond Orchard.</p>
         <p>If you wrote about a job, we route your details to the company in our group closest to you that is hiring for your role, and you will hear from someone there.</p>
         <p>In the meantime, you might find these useful.</p>
         <p><a class="link-arrow" href="/sell-your-business/#process">How a partnership works, step by step</a></p>

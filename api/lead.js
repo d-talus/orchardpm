@@ -19,6 +19,7 @@ const FOUNDER_EMAIL = 'dgobbo@talusholdings.com';
 const FORM_LABELS = {
   'seller-inquiry': 'Seller inquiry',
   'careers-application': 'Careers application',
+  'proposal-request': 'Proposal request',
   'general-contact': 'General contact',
 };
 
@@ -66,7 +67,7 @@ function validate(data) {
   const last = clean(data.last_name, 80);
   if (!first || !last) errors.push('Please enter your first and last name.');
 
-  if (form === 'seller-inquiry' || form === 'careers-application') {
+  if (form === 'seller-inquiry' || form === 'careers-application' || form === 'proposal-request') {
     const phone = clean(data.phone, 40).replace(/[^\d]/g, '');
     if (phone.length < 10) errors.push('Please enter a phone number we can reach you on.');
   }

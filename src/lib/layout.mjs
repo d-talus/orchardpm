@@ -23,7 +23,7 @@ function header(current) {
   return `<header class="site-header">
     <div class="container site-header__bar">
       <a class="site-header__logo" href="/" aria-label="${esc(site.name)} home">
-        <img src="/assets/logo/opm-lockup.png" alt="${esc(site.name)}" width="743" height="150">
+        <img src="/assets/logo/opm-lockup.png" alt="${esc(site.name)}" width="715" height="157">
       </a>
       <div class="site-header__nav" id="site-nav">
         <nav class="nav" aria-label="Main">
@@ -58,9 +58,12 @@ function footer() {
     <div class="container">
       <div class="site-footer__top">
         <div class="site-footer__brand">
-          <img src="/assets/logo/opm-lockup-white.png" alt="${esc(site.name)}" width="743" height="150" loading="lazy">
+          <img src="/assets/logo/opm-wordmark-white.png" alt="${esc(site.name)}" width="880" height="267" loading="lazy">
           <p>${esc(site.tagline)}</p>
-          <p><a href="mailto:${esc(site.email)}">${esc(site.email)}</a></p>
+          <p class="site-footer__contact">
+            <span class="site-footer__person">${esc(site.founder.name)}</span>
+            <a href="mailto:${esc(site.email)}">${esc(site.email)}</a>
+          </p>
         </div>
         ${columns}
       </div>

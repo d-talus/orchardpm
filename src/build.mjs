@@ -6,6 +6,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { site, specialties } from './data/site.mjs';
+import { services } from './data/services.mjs';
 import { categories, categoryBySlug } from './data/blog.mjs';
 import { render } from './lib/layout.mjs';
 import { parseFrontMatter, renderMarkdown, firstParagraph } from './lib/markdown.mjs';
@@ -15,6 +16,7 @@ import { homePage } from './pages/home.mjs';
 import { sellPage } from './pages/sell.mjs';
 import { careersPage } from './pages/careers.mjs';
 import { whatWeDoPage, specialtyPage } from './pages/what-we-do.mjs';
+import { servicesPage, servicePage } from './pages/services.mjs';
 import { aboutPage } from './pages/about.mjs';
 import { contactPage, serviceAreasPage, thanksPage, privacyPage, accessibilityPage, notFoundPage } from './pages/misc.mjs';
 import { blogIndexPages, categoryPages, postPage } from './pages/blog.mjs';
@@ -140,6 +142,8 @@ function build() {
 
   const pages = [
     homePage({ posts }),
+    servicesPage(),
+    ...services.map((s) => servicePage(s)),
     whatWeDoPage(),
     ...specialties.map((s) => specialtyPage(s)),
     sellPage(),

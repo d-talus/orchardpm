@@ -33,8 +33,11 @@ export const site = {
   themeColor: '#124c1e',
 };
 
+/* Two audiences share this site. "Services" is the entry point for boards and
+   property owners; "Sell your business" is the entry point for firm owners, and
+   /what-we-do/ sits behind it rather than competing with Services in the bar. */
 export const nav = [
-  { label: 'What we do', href: '/what-we-do/' },
+  { label: 'Services', href: '/services/' },
   { label: 'Sell your business', href: '/sell-your-business/' },
   { label: 'Careers', href: '/careers/' },
   { label: 'About', href: '/about/' },
@@ -46,29 +49,31 @@ export const headerCta = { label: 'Start a conversation', href: '/sell-your-busi
 
 export const footerColumns = [
   {
+    title: 'Services',
+    links: [
+      { label: 'Community associations', href: '/services/community-association-management/' },
+      { label: 'High-rise and mid-rise', href: '/services/high-rise-and-mid-rise-management/' },
+      { label: 'Townhome communities', href: '/services/townhome-and-planned-communities/' },
+      { label: 'Rental and multifamily', href: '/services/rental-and-multifamily-management/' },
+      { label: 'Commercial and mixed use', href: '/services/commercial-and-mixed-use-management/' },
+      { label: 'Request a proposal', href: '/services/#proposal' },
+    ],
+  },
+  {
     title: 'Company',
     links: [
-      { label: 'What we do', href: '/what-we-do/' },
       { label: 'About Orchard', href: '/about/' },
       { label: 'Service areas', href: '/service-areas/' },
       { label: 'Blog', href: '/blog/' },
       { label: 'Contact', href: '/contact/' },
+      { label: 'Careers at Orchard', href: '/careers/' },
     ],
   },
   {
-    title: 'Where we partner',
-    links: [
-      { label: 'Residential management', href: '/what-we-do/residential-property-management/' },
-      { label: 'Community associations', href: '/what-we-do/community-association-management/' },
-      { label: 'Commercial and mixed use', href: '/what-we-do/commercial-property-management/' },
-      { label: 'Maintenance and facilities', href: '/what-we-do/maintenance-and-facilities/' },
-    ],
-  },
-  {
-    title: 'Join Orchard',
+    title: 'For firm owners',
     links: [
       { label: 'Sell your business', href: '/sell-your-business/' },
-      { label: 'Careers at Orchard', href: '/careers/' },
+      { label: 'Who we partner with', href: '/what-we-do/' },
       { label: 'How a partnership works', href: '/sell-your-business/#process' },
       { label: 'Questions owners ask', href: '/sell-your-business/#faq' },
     ],
@@ -89,6 +94,7 @@ export const legalLinks = [
 export const specialties = [
   {
     slug: 'residential-property-management',
+    partnerNoun: "residential management firm",
     name: 'Residential property management',
     shortName: 'Residential management',
     icon: 'building',
@@ -133,6 +139,7 @@ export const specialties = [
   },
   {
     slug: 'community-association-management',
+    partnerNoun: "community association firm",
     name: 'Community association management',
     shortName: 'Community associations',
     icon: 'community',
@@ -177,6 +184,7 @@ export const specialties = [
   },
   {
     slug: 'commercial-property-management',
+    partnerNoun: "commercial management firm",
     name: 'Commercial and mixed-use management',
     shortName: 'Commercial and mixed use',
     icon: 'chart',
@@ -221,6 +229,7 @@ export const specialties = [
   },
   {
     slug: 'maintenance-and-facilities',
+    partnerNoun: "property maintenance company",
     name: 'Maintenance and facilities services',
     shortName: 'Maintenance and facilities',
     icon: 'wrench',

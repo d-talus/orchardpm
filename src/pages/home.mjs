@@ -43,8 +43,8 @@ export function homePage({ posts }) {
     </section>`,
 
     featureGrid({
-      eyebrow: 'What we do',
-      title: 'Four kinds of firm, one standard of service',
+      eyebrow: 'Who we partner with',
+      title: 'The firms we buy and hold',
       lede:
         'Each of these businesses answers to an owner, a board, or a resident who cannot postpone the problem. We look for the companies that already answer well, then give them the room to take on more.',
       items: specialtyCards,
@@ -152,7 +152,12 @@ export function homePage({ posts }) {
     `<section class="section">
       <div class="container">
         <h2 class="sr-only">Where to go next</h2>
-        <div class="grid grid--2 grid--stretch">
+        <div class="grid grid--3 grid--stretch">
+          <div class="card card--sage">
+            <h3>Need a manager for your property?</h3>
+            <p>Our companies manage community associations, apartment buildings, townhome communities, rentals, and commercial property across New Jersey.</p>
+            ${buttons([{ label: 'See our services', href: '/services/', variant: 'btn--primary' }])}
+          </div>
           <div class="card card--sage">
             <h3>Thinking about selling your firm?</h3>
             <p>We partner with owners who want the company to outlast the sale. Start with a conversation that goes nowhere near a price, and nothing moves forward until you want it to.</p>
@@ -180,11 +185,11 @@ export function homePage({ posts }) {
       : '',
 
     ctaBand({
-      title: `Start a conversation with ${site.founder.firstName}`,
+      title: 'Start a conversation with Orchard',
       lede: 'Every inquiry reaches our founder directly, and it stays confidential whether or not anything comes of it.',
       actions: [
-        { label: 'Contact Orchard', href: '/contact/', variant: 'btn--primary' },
-        { label: `Email ${site.founder.firstName}`, href: `mailto:${site.email}`, variant: 'btn--on-dark' },
+        { label: 'Contact us', href: '/contact/', variant: 'btn--primary' },
+        { label: 'Email us', href: `mailto:${site.email}`, variant: 'btn--on-dark' },
       ],
       variant: '',
     })

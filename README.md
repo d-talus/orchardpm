@@ -40,6 +40,7 @@ public/              Copied verbatim into dist/ (CSS, JS, images, favicon)
   css/site.css       Layout and components built on those tokens
 src/
   data/site.mjs      Identity, navigation, the four specialties, service areas, values
+  data/services.mjs  Client-facing services, capabilities, New Jersey specifics
   data/blog.mjs      Blog categories
   content/blog/*.md  Blog posts, with front matter
   lib/layout.mjs     Page shell: head, meta, structured data, header, footer
@@ -52,6 +53,18 @@ api/lead.js          Vercel function that receives every form on the site
 
 Copy lives in `src/data/` and `src/pages/`, never in the templates, so a wording change
 touches one file.
+
+### Two audiences, two sections
+
+The site serves boards and property owners through `/services/`, and owners of management
+firms through `/sell-your-business/` and `/what-we-do/`. Keep those apart. Their titles,
+headings, and meta descriptions must not converge, or the two sections compete for the
+same search results; `npm run check` fails the build on a duplicate title, which is the
+guard rail for exactly this.
+
+Anything in `src/data/services.mjs` under `serviceFeatures` should stay free of any one
+state's rules, so a company joining Orchard elsewhere inherits the copy unchanged.
+Jurisdiction-specific claims belong in `newJerseyNotes`, and every one of them is sourced.
 
 ### Adding a blog post
 

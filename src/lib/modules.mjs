@@ -83,7 +83,7 @@ export function prose({ eyebrow: eb, title, body = [], actions = [], variant = '
   </section>`;
 }
 
-export function split({ eyebrow: eb, title, body = [], list = [], actions = [], image, imageAlt = '', reverse = false, variant = '', id, mediaShape = 'media--landscape' }) {
+export function split({ eyebrow: eb, title, body = [], list = [], actions = [], image, imageAlt = '', reverse = false, variant = '', id, mediaShape = 'media--landscape', imageWidth = 900, imageHeight = 563 }) {
   const text = `<div>
         ${eyebrow(eb)}
         ${title ? `<h2>${title}</h2>` : ''}
@@ -92,7 +92,7 @@ export function split({ eyebrow: eb, title, body = [], list = [], actions = [], 
         ${buttons(actions)}
       </div>`;
   const media = image
-    ? `<div class="media ${mediaShape}"><img src="${image}" alt="${esc(imageAlt)}" loading="lazy" decoding="async" width="900" height="563"></div>`
+    ? `<div class="media ${mediaShape}"><img src="${image}" alt="${esc(imageAlt)}" loading="lazy" decoding="async" width="${imageWidth}" height="${imageHeight}"></div>`
     : '';
   return `<section class="${classes('section', variant)}"${attrs({ id })}>
     <div class="container">

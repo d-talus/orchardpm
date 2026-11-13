@@ -25,8 +25,9 @@ export function aboutPage() {
       ],
       image: '/assets/img/devon-gobbo.png',
       imageAlt: `${site.founder.name}, founder of ${site.name}`,
-      mediaShape: 'media--portrait',
-      reverse: true,
+      mediaShape: 'media--person',
+      imageWidth: 500,
+      imageHeight: 500,
       actions: [{ label: 'Start a conversation', href: '/sell-your-business/#contact', variant: 'btn--primary' }],
     }),
 

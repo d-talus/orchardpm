@@ -6,7 +6,7 @@ const faqItems = [
   {
     q: 'How do I start a conversation about selling my firm?',
     a: [
-      `Send the form at the bottom of this page, or write to ${site.founder.name} directly at <a href="mailto:${site.email}">${site.email}</a>. The first conversation is a phone call, and it covers what you have built and what you want to happen next.`,
+      `Send the form at the bottom of this page, or write to us directly at <a href="mailto:${site.email}">${site.email}</a>. The first conversation is a phone call, and it covers what you have built and what you want to happen next.`,
       'Nothing leaves Orchard, and we sign a mutual non-disclosure agreement before you hand over a single financial statement.',
     ],
   },
@@ -120,8 +120,9 @@ export function sellPage() {
         <p class="lead">Selling the company you built decides more than a number. It decides what happens to the people who show up every morning and to the name that boards and owners pass along.</p>
         <p>Orchard Property Management partners with residential, community association, commercial, and maintenance firms across New Jersey. We look for companies that earned their reputation the slow way, through managers who return calls, accounting that reconciles, and work that holds up when a board asks hard questions. When we find one, our plan is to keep it running the way it already runs and to fund the growth the owner never had the capital to pursue.</p>
         <p>We hold companies indefinitely. No fund timeline forces a resale in five years, and no outside shareholder presses for a number by a certain quarter, so we have every reason to protect the service quality that made the firm worth buying.</p>
-        <p>Our founder, ${site.founder.name}, has spent his career partnering with founder-owned businesses. That experience turns out to be mostly about people: how to tell a staff their company has been sold, how to keep a board calm, and how to make a transition feel like continuity.</p>
-        <p><a class="link-arrow" href="/about/">Meet ${site.founder.firstName} and read why Orchard exists</a></p>
+        <p>We have spent our careers partnering with founder-owned businesses, and that experience turns out to be mostly about people: how to tell a staff their company has been sold, how to keep a board calm, and how to make a transition feel like continuity.</p>
+        <p><a class="link-arrow" href="/what-we-do/">See the four kinds of firm we partner with</a></p>
+        <p><a class="link-arrow" href="/about/">Read why Orchard exists</a></p>
       </div>
     </section>`,
 
@@ -252,7 +253,7 @@ export function sellPage() {
     faq({
       eyebrow: 'Seller questions',
       title: 'Questions owners ask us first',
-      lede: `If your question is not here, ask it in the form below and ${site.founder.firstName} will answer it personally.`,
+      lede: 'If your question is not here, ask it in the form below and we will answer it personally.',
       items: faqItems,
       variant: 'section--surface',
       id: 'faq',
