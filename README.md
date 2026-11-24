@@ -84,7 +84,20 @@ markup portable to Avada Builder later.
 ## Deploying
 
 Vercel builds with `npm run build` and serves `dist/`. `vercel.json` sets clean URLs,
-trailing slashes, long cache headers on `/assets/`, and the usual security headers.
+trailing slashes, cache headers, and the usual security headers.
+
+### Why the built filenames carry a hash
+
+The build renames everything under `css/`, `js/`, and `assets/` to include a hash of its
+own contents, so `public/css/brand.css` ships as `/css/brand.43aaab89.css`, and rewrites
+every reference in the generated HTML to match. Change the file and its URL changes with
+it, which misses the browser cache immediately; leave it alone and the URL is stable and
+stays cached. That is what makes the one-year `immutable` headers safe.
+
+Without it, a returning visitor keeps the stylesheet they already have until the cache
+expires, which looks exactly like a deploy that did not land. Anything referenced by a
+fixed path from outside the site keeps its own name: `/favicon.svg`,
+`/apple-touch-icon.png`, `/robots.txt`, `/sitemap.xml`, and the pages themselves.
 
 ### Form delivery
 

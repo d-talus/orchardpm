@@ -1,6 +1,7 @@
 /* Build: read page data and blog content, render every page through layout.render(),
    and write a static site to dist/. No dependencies, no framework. */
 
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -43,8 +44,58 @@ function copyDir(from, to) {
   }
 }
 
-function writePage(page) {
-  const html = render(page);
+function listFiles(dir, out = []) {
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) listFiles(full, out);
+    else out.push(full);
+  }
+  return out;
+}
+
+/**
+ * Rename every stylesheet, script, and asset in dist/ to include a hash of its
+ * own contents, and return a map from the original site path to the new one.
+ *
+ * Without this, a changed stylesheet keeps its URL, so a browser holding the
+ * old copy under a long cache header goes on using it until the cache expires.
+ * With it, changing a file changes its URL, which misses the cache immediately,
+ * while a file that has not changed keeps its name and stays cached. That is
+ * what makes the one-year immutable headers in vercel.json safe to set.
+ *
+ * Files outside these folders keep their names, because something external
+ * refers to them by a fixed path: /favicon.svg, /apple-touch-icon.png,
+ * /robots.txt, /sitemap.xml, and the pages themselves.
+ */
+function fingerprintAssets() {
+  const map = new Map();
+  for (const full of listFiles(DIST)) {
+    const rel = path.relative(DIST, full).split(path.sep).join('/');
+    if (!/^(css|js|assets)\//.test(rel)) continue;
+
+    const hash = crypto.createHash('sha256').update(fs.readFileSync(full)).digest('hex').slice(0, 8);
+    const ext = path.extname(rel);
+    const hashed = `${rel.slice(0, rel.length - ext.length)}.${hash}${ext}`;
+    fs.renameSync(full, path.join(DIST, hashed));
+    map.set(`/${rel}`, `/${hashed}`);
+  }
+  return map;
+}
+
+/** Point every reference in a rendered page at the hashed filename. */
+function rewriteAssetPaths(html, assetMap) {
+  let out = html;
+  for (const [from, to] of assetMap) {
+    // Site-absolute references, plus the absolute ones in og:image and JSON-LD.
+    out = out.split(site.url + from).join(site.url + to);
+    out = out.split(`"${from}"`).join(`"${to}"`);
+    out = out.split(`'${from}'`).join(`'${to}'`);
+  }
+  return out;
+}
+
+function writePage(page, assetMap) {
+  const html = rewriteAssetPaths(render(page), assetMap);
   const rel = page.rawPath ? page.path.replace(/^\//, '') : path.join(page.path.replace(/^\//, ''), 'index.html');
   const out = path.join(DIST, rel);
   fs.mkdirSync(path.dirname(out), { recursive: true });
@@ -135,6 +186,7 @@ function build() {
   rmrf(DIST);
   fs.mkdirSync(DIST, { recursive: true });
   copyDir(PUBLIC, DIST);
+  const assetMap = fingerprintAssets();
 
   const posts = loadPosts();
   const postsByCategory = Object.fromEntries(categories.map((c) => [c.slug, posts.filter((p) => p.category === c.slug)]));
@@ -167,7 +219,7 @@ function build() {
   const written = pages.map((page) => {
     if (seen.has(page.path)) throw new Error(`Duplicate page path: ${page.path}`);
     seen.add(page.path);
-    return writePage(page);
+    return writePage(page, assetMap);
   });
 
   writeSitemap(
